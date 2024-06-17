@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/firstrelative"
+        android:layout_width="400dp"
+        android:layout_height="430dp"
+        android:background="@drawable/foodhome">
+
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="80dp"
+            android:background="@color/white"
+            android:hint="Username"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            android:layout_centerHorizontal="true"
+            />
+        <EditText
+            android:id="@+id/password"
+            android:textAlignment="center"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:layout_below="@+id/userName"
+            android:layout_marginTop="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="36sp"
+            android:layout_centerHorizontal="true"
+             />
+        <Button
+            android:id="@+id/login"
+            android:layout_width="160dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:text="Login"
+            android:textSize="26dp"
+           android:layout_below="@+id/password"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/forgetPas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="Forget Password?"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/firstrelative">
+
+        <TextView
+            android:id="@+id/notaMember"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Not a member yet ?"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+
+             />
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textSize="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/notaMember"
+            android:layout_centerHorizontal="true"
+
+             />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
